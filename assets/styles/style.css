@@ -1,0 +1,322 @@
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.eot?13421700');
+    src: url('../font/fontello.eot?13421700#iefix') format('embedded-opentype'),
+    url('../font/fontello.woff?13421700') format('woff'),
+    url('../font/fontello.ttf?13421700') format('truetype'),
+    url('../font/fontello.svg?13421700#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.demo-icon {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+/*----------*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+/* контейнер */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* flex-контейнер */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+/* CSS настройки flex-элементов */
+.col {
+    position: relative;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 15px;
+}
+/* ширина блоков article и aside по умолчанию */
+.col__article {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.col_banner_text,
+.col_banner_image {
+    flex: 0 0 50%;
+}
+
+.header {
+    background-color: #CBECFF;
+    margin-bottom: 100px;
+}
+.col__article {
+    background-color: #fff8e1;
+}
+.col__aside {
+    background-color: #dcedc8;
+}
+.fin, .kit {
+    font-size: 35pt;
+    letter-spacing: 1px;
+}
+.kit {
+    color: #0962E8;
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+}
+
+.row__banner{
+    justify-content: flex-end;
+}
+.phone_hand_image{
+    height: 500px;
+}
+.phone_image{
+    height: 377px;
+}
+.col_banner_image {
+    align-items: end;
+    justify-content: end;
+    display: flex;
+    flex: 0 0 60%
+
+}
+.col_banner_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    flex: 0 0 20%;
+}
+
+.row_elements {
+    display: flex;
+    justify-content: space-around;
+}
+.col_element {
+    flex: 0 0 20%;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: relative;
+    top: 20px;
+    z-index: 10;
+    padding: 10px 0 10px 0;
+    box-shadow: 5px 5px 20px 0 rgba(34, 60, 80, 0.2);
+}
+
+.row__col_elements{
+    display: flex;
+    justify-content: space-around;
+
+}
+.element_text, .element_ico{
+    display: flex;
+    flex: 0 0 30%;
+}
+.ico{
+    background-color: RGB(239, 249, 255);
+    height: 30px;
+    width: 40px;
+    border-radius: 100px;
+}
+.blue {
+    color: #0962E8;
+}
+.row__our_products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.col__our_products{
+    display: flex;
+    text-align: center;
+    flex: 0 0 50%;
+}
+.platforms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.col_platform{
+    background-color: #E9F6FF;
+    display: flex;
+    flex:0 0 49%;
+    border-radius: 20px;
+}
+.row_platform_element{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.platform_text, .platform_image{
+    display: flex;
+}
+.platform_text, .platform_image{
+    flex: 0 0 40%;
+}
+.platform_image{
+    position: relative;
+    top: 50px
+}
+.row_info{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+.col_info{
+    flex: 0 0 45%;
+}
+.info_elements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.info_element{
+    flex: 0 0 45%;
+    margin-top: 20px;
+}
+.btn_success{
+    background-color: #0962E8;
+    color:white;
+    border-radius: 5px;
+    border:0;
+    height: 40px;
+    width:150px
+}
+.ico{
+    color: #0962E8;
+    font-size: 20pt;
+}
+
+@media (max-width: 960px) {
+    .row__banner{
+        flex-direction: column-reverse;
+    }
+
+    .col__article {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col_banner_text,
+    .col_banner_image {
+        flex: 0 0 100%;
+    }
+    .col_banner_image{
+        justify-content: center;
+        padding-left: 30%;
+        overflow: hidden;
+    }
+    .row{
+        margin-left: 0;
+        margin-right: 0
+    }
+    .row__col_elements{
+        flex-direction: column-reverse;
+    }
+    .col_element{
+        flex: 0 0 45%;
+    }
+    .ico-mobile{
+        height:50px;
+        width:50px;
+        padding-top: 10px;
+        position: relative;
+        top: -15px
+    }
+    .col__our_products{
+        flex: 0 0 100%;
+    }
+    .platforms{
+        flex-direction: column;
+    }
+    .col_platform{
+        margin-bottom: 15px;
+    }
+    .row_info{
+        flex-direction: column;
+    }
+    .col_info{
+        text-align: center;
+    }
+    .mobile-btn{
+        width: 100%;
+        font-size: 15pt;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+    .info_element{
+        text-align: left;
+        border-radius: 30px;
+        padding: 10px;
+        box-shadow:10px 14px 20px 0 rgb(34 60 80 / 14%);
+    }
+    .ico{
+        height: 50px;
+        width: 50px;
+        padding-top: 11px;
+    }
+}
